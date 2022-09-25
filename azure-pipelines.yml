@@ -1,0 +1,30 @@
+
+
+stages:
+  - stage: teststage
+    jobs:
+      - job : 
+        displayName: job1
+        steps: 
+           - script: 
+              echo hello
+           - task: CmdLine@2
+             inputs:
+               script : 'echo hello'
+  - stage: buildstage
+    jobs:
+      - job : 
+        displayName: job1
+        steps: 
+           - script: 
+              echo hello
+           - task: CmdLine@2
+             inputs:
+               script : 'echo hello'
+      
+      
+          
+              
+          
+   
+ 
